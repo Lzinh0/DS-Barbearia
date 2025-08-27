@@ -313,6 +313,11 @@ header a{
 }
 }
 
+.location{
+    height: 450px;
+    width: 100%;
+}
+
 footer{
     height: 100px;
     background-color: #1c1b1b;
@@ -321,6 +326,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 0.9rem;
+    text-align: center;
     padding: 20px;
     flex-direction: column;
 }
@@ -337,9 +343,14 @@ footer a {
     display: flex;
     color: white;
     text-decoration: none;
-    
     position: relative;
     transition: color 0.3s;
+}
+
+footer p{
+    font-weight: bold;
+    position: relative;
+    top: 5px;
 
 }
 
@@ -347,3 +358,21 @@ footer a:hover {
     color: #d840d3;
 }
 
+
+@media (max-width: 768px) {
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-image{
+        background-position: 150px;
+    }
+    .service-image2{
+        background-position: 150px;
+    }
+
+    li{
+        opacity: 0.8;
+    }
+}
